@@ -34,7 +34,7 @@ body{
 .title p{
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: indianred;
+    color: rgb(205, 92, 92);
     margin: 0;
 }
 .border{
@@ -58,7 +58,7 @@ body{
     
 }
 .menu-item a:hover{
-    background: rgb(250, 212, 218);
+    background: rgb(220, 153, 89);
 }
 #food-items{
     background: whitesmoke;
@@ -130,13 +130,13 @@ body{
     color: white;
     background: crimson;
 }
-#biryani,#paneer,#chicken,#vegetable,#chinese,#south-indian{
+#food,#rice,#chicken,#vegetable,#chinese,#west-africa{
     margin-top: 40px;   
 }
-#paneer #item-card,#vegetable #item-card{
+#rice #item-card,#vegetable #item-card{
     background: rgb(218, 253, 188);
 }
-#chinese #item-card,#south-indian #item-card{
+#Ghanaian #item-card,#west-africa #item-card{
     background: rgb(221, 243, 243);
 }
 #category-name,.item-menu{
@@ -280,7 +280,7 @@ color: white;
     font-size: 25px;
     color: indianred;
 }
-#delievery{
+#delivery{
     font-size: 20px;
     color: limegreen;
 }

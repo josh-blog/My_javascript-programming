@@ -1,8 +1,8 @@
-import {foodItem} from './fooditem.js'
+import {foodItem} from './food item.js'
 
 function displayItems(){
-    var biryani= document.getElementById('biryani');
-    var paneer=  document.getElementById('paneer');;
+    var rice= document.getElementById('rice');
+    var food=  document.getElementById('food');;
     var chicken=  document.getElementById('chicken');
     var vegetable=  document.getElementById('vegetable');
     var chinese=  document.getElementById('chinese');
@@ -10,13 +10,13 @@ function displayItems(){
 
     
 
-    const biryaniData= foodItem.filter((item)=>item.category=='biryani');
+    const riceData= foodItem.filter((item)=>item.category=='rice');
     const chickenData= foodItem.filter((item)=>item.category=='chicken');
-    const PaneerData= foodItem.filter((item)=>item.category=='paneer');
+    const foodData= foodItem.filter((item)=>item.category=='food');
     const vegetableData= foodItem.filter((item)=>item.category=='vegetable');
-    const chineseData= foodItem.filter((item)=>item.category=='chinese');
-    const southData= foodItem.filter((item)=>item.category=='south indian');
-    biryaniData.map(item=>{
+    const ghanainData= foodItem.filter((item)=>item.category=='ghanaian');
+    const westData= foodItem.filter((item)=>item.category=='west africa');
+    riceData.map(item=>{
         
         var itemCard= document.createElement('div');
         itemCard.setAttribute('id','item-card')
@@ -53,7 +53,7 @@ function displayItems(){
         itemCard.appendChild(itemName);
         itemCard.appendChild(itemPrice);
 
-        biryani.appendChild(itemCard);
+        rice.appendChild(itemCard);
         
     })
 
@@ -98,7 +98,7 @@ function displayItems(){
 
     })
 
-    PaneerData.map(item=>{
+    foodDataData.map(item=>{
         var itemCard= document.createElement('div');
         itemCard.setAttribute('id','item-card')
 
@@ -134,7 +134,7 @@ function displayItems(){
         itemCard.appendChild(itemName);
         itemCard.appendChild(itemPrice);
         
-        paneer.appendChild(itemCard)
+        food.appendChild(itemCard)
 
     })
 
@@ -179,7 +179,7 @@ function displayItems(){
     
     })
 
-    chineseData.map(item=>{
+    ghanaianData.map(item=>{
         var itemCard= document.createElement('div');
         itemCard.setAttribute('id','item-card')
 
@@ -216,11 +216,11 @@ function displayItems(){
         itemCard.appendChild(itemPrice);
 
         
-        chinese.appendChild(itemCard)
+        ghanaian.appendChild(itemCard)
         
     })
 
-    southData.map(item=>{
+    westData.map(item=>{
         var itemCard= document.createElement('div');
         itemCard.setAttribute('id','item-card')
 
@@ -256,7 +256,7 @@ function displayItems(){
         itemCard.appendChild(itemName);
         itemCard.appendChild(itemPrice);
 
-        southIndian.appendChild(itemCard)
+        westAfrica.appendChild(itemCard)
 
     })
 }
